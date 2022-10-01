@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+}
+
+.navdiv {
+  width: 100%;
+  /* height: 100vh; */
+  /* background: #0a192f; */
+  position: fixed;
+  z-index: 100;
+}
+
+.svg {
+  width: 30px;
+}
+
+.nav {
+  width: 100%;
+  height: 60px;
+  background: rgba(210, 152, 152, 0.043);
+  backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 12px 0px 12px 0px;
+  /* border: 2px solid navy; */
+}
+
+.nav ul {
+  width: 60%;
+  position: relative;
+  float: right;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* padding: 10px; */
+  background: rgba(0, 0, 0, 0.334);
+  border-radius: 15px;
+  backdrop-filter: blur;
+  padding: 8px 0px 8px 0px;
+}
+
+.nav ul li {
+  width: 60px;
+  list-style: none;
+  margin: 2px 2px 2px 0px;
+  height: 56px;
+  background: linear-gradient(45deg, navy, purple);
+  backdrop-filter: blur(6px);
+  display: grid;
+  place-items: center;
+  border-radius: 6px;
+  color: rgba(255, 255, 255, 0.451);
+  font-weight: bold;
+  transition: 0.5s all;
+  font-size: larger;
+}
+
+.nav ul li:hover {
+  /* background: linear-gradient(45deg, purple, navy); */
+  /* background-position: 400px 224px; */
+  transform: translateY(10px);
+}
+
+::-webkit-scrollbar{
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
+}
